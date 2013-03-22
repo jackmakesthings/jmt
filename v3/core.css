@@ -1,0 +1,611 @@
+
+
+@import url("reset.css");
+
+@import url("tipsy.css");
+
+html {
+}
+
+body {
+    background: url("../img/main_bg.jpg") repeat scroll left top transparent;
+    height: auto;
+    min-height: 100%;
+    font: 12px 'Helvetica Neue',Arial,sans-serif;
+    color: #8F8577;
+}
+
+/* BASIC HEADLINE TYPOGRAPHY */
+h1 {
+    font-size: 26px;
+}
+
+#sidebar h2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #666666;
+}
+
+#sub-sidebar h2 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 2px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* This adjusts the weight for the Cufon Font Elements - Bold or Normal */
+#grid-content h2 {
+    font-weight: normal;
+}
+
+#sidebar h2, ul.navigation li, #sidebar h3 {
+    font-weight: bold;
+}
+
+/* SIDEBAR */
+#sidebar {
+    width: 285px;
+    float: left;
+    margin: 0px 15px 0px 0px;
+    height: 100%;
+    position: fixed;
+}
+
+#sidebar .logo {
+    text-align: center;
+    padding: 30px 0px 30px 3px;
+}
+
+#sidebar .navigation {
+    background: none repeat scroll 0% 0% #000000;
+}
+
+#sidebar .navigation > li {
+    background: url("../img/dot.gif") repeat-x scroll 0% 0% transparent;
+    padding: 10px 0px 9px 25px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#sidebar .navigation > li > ul {
+    padding-left: 15px;
+    display: none;
+}
+
+#sidebar .navigation > li > ul > li {
+    padding-top: 6px;
+    font-size: 12px;
+}
+
+#sidebar .navigation li a:link, #sidebar .navigation li a:visited {
+    color: #FFFFFF;
+}
+
+/* This is your highlight color! */
+#sidebar .navigation li a:hover {
+    color: #666666;
+}
+
+#sidebar .navigation li.current, #sidebar .navigation li.current a {
+    color: #666666;
+}
+
+#sidebar .box {
+    background: url("../img/dot.gif") repeat-x scroll 0% 0% #000000;
+    padding: 0px;
+}
+
+#sidebar .box h2 {
+    margin-bottom: 4px;
+}
+
+#sidebar .box h3 {
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+#sidebar .box ul li {
+    background: url("../img/dot.gif") repeat-x scroll 0% 0% #000000;
+}
+
+#sidebar .box ul li ul li {
+    background: none repeat scroll 0% 0% transparent;
+}
+
+#sidebar .box form.search {
+}
+
+#sidebar .box form.search p {
+    float: left;
+    line-height: 22px;
+    margin-right: 5px;
+}
+
+#sidebar .box form.search p img {
+    vertical-align: middle;
+}
+
+#sidebar .box form.search input {
+    font: 12px Tahoma,Arial,sans-serif;
+    background: none repeat scroll 0% 0% #494949;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #474747;
+    color: #FFFFFF;
+}
+
+#sidebar .box form.search input[type="text"] {
+    width: 155px;
+}
+
+#sidebar .box form.search input.button {
+    text-transform: uppercase;
+    background: none repeat scroll 0% 0% #2F2F2F;
+    font-size: 10px;
+    padding: 4px 7px;
+    font-weight: bold;
+}
+
+#sidebar ul.widget-area li:first-child {
+    background: none repeat scroll 0% 0% transparent;
+}
+
+#sidebar ul.widget-area > li {
+    padding: 15px 15px 15px 25px;
+}
+
+#sidebar ul.widget-area > li > ul > li {
+    padding: 2px 0px;
+}
+
+#sidebar .textwidget ul li {
+    padding: 10px 0px;
+}
+
+#sidebar h3 {
+}
+
+#sidebar .widget_text .icon {
+    float: left;
+    margin: 0px 15px 0px 0px;
+    width: 40px;
+}
+
+#sidebar .widget_text {
+    padding-bottom: 7px ! important;
+}
+
+#sidebar .social {
+    height: 16px;
+    overflow: hidden;
+}
+
+#sidebar .social img, #sub-sidebar .social img {
+    opacity: 0.4;
+}
+
+#sidebar .social img:hover, #sub-sidebar .social img:hover {
+    opacity: 1;
+}
+
+#sub-sidebar .social {
+    padding-bottom: 1px;
+    margin-top: -17px;
+}
+
+#sub-sidebar .social a {
+    display: block;
+    float: left;
+    width: 20px;
+}
+
+#sidebar .close_dot {
+    background: url("../img/dot.gif") repeat-x scroll 0% 0% transparent;
+    display: block;
+    height: 1px;
+}
+
+#sidebar .anchor {
+    vertical-align: bottom;
+}
+
+#sidebar .box a, #sidebar .box a:visited {
+    color: white;
+}
+
+/* CONTENT AREA & VGRID */
+#content {
+    padding-left: 297px;
+    padding-top: 25px;
+    min-height: 100%;
+    margin-bottom: 0px;
+}
+
+#content.no-grid {
+    padding-left: 0px ! important;
+}
+
+#grid-content {
+    overflow: hidden;
+    height: 0px;
+}
+
+/* CSS for the vGrid Elements */
+/* Visit the end of the file to see how to manually lock a specific height/width for each module */
+#grid-content li {
+    background: none repeat scroll 0% 0% #FFFFFF;
+    width: auto;
+    height: auto;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+    display: block;
+    border: 1px solid #EAEAE8;
+    margin: 5px;
+    opacity: 0.5;
+}
+
+/* !!! CSS CUSTOMIZATIONS !!!!!!!!!!!!!!!!!!!!! */
+/* !!! CSS CUSTOMIZATIONS !!!!!!!!!!!!!!!!!!!!! */
+/* !!! CSS CUSTOMIZATIONS !!!!!!!!!!!!!!!!!!!!! */
+/* !!! These are mostly for advanced users... play around with these at your own peril, but have fun! !!!!!!!!!!!!!!!!!!!!! */
+
+/* CSS Width / Height LOCKDOWN - Uncomment this when you want all grid images to be cropped uniformly. 
+#grid-content li img{
+	width: 200px !important; 
+	height: 130px !important; 
+	overflow: hidden;
+	}
+*/
+
+
+/* CSS Width / Height LOCKDOWN - Uncomment this when you want all grid titles/descriptions to be cropped uniformly */
+#grid-content .module {
+    width: 200px;
+}
+
+#grid-content li h2, #grid-content li h2 a, #grid-content li h2 a:visited, .vcard, .vcard a {
+    color: #000000;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+#grid-content li .module p {
+    font: italic 11px/15px Georgia;
+    color: #7F7F7F;
+}
+
+#grid-content li img {
+    display: block;
+    border: 1px solid #EAEAE8;
+    padding: 3px;
+    border-radius: 2px 2px 2px 2px;
+}
+
+#grid-content li h3 {
+    line-height: 1.1em;
+    margin: 0px;
+    padding: 0px;
+}
+
+#grid-content li p {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CONTENT AREA for Non-GRID PAGES */
+/* Note that quite a bit of the UI and other Typographical Styling for this section is located in reset.css */
+.entry-container {
+    margin: 0px auto;
+    padding-left: 288px;
+    width: 970px;
+}
+
+#entry {
+    background: none repeat scroll 0% 0% #FBFBFB;
+    float: left;
+    width: 600px;
+    height: auto;
+    border-radius: 5px 0px 5px 5px;
+    padding: 30px;
+    display: block;
+    border: 1px solid #FBFBFB;
+    margin: 5px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+#entry.full-width {
+    width: 800px;
+    height: auto;
+}
+
+#entry, #sub-sidebar {
+    line-height: 18px;
+}
+
+#entry h1 {
+    font-size: 26px;
+    color: #222222;
+    margin-bottom: 10px;
+}
+
+#entry h2, #entry h3, #entry h4, #entry h5, #entry h6 {
+    margin-top: 20px;
+    color: #444444;
+}
+
+hr {
+    background-color: #DDDDDD;
+    background-image: url("../img/border_w.gif");
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    border: medium none #DDDDDD;
+    height: 2px;
+    margin: 5px 0px 8px;
+}
+
+#entry .section-spacer {
+    height: 600px;
+}
+
+#sub-sidebar {
+    background: url("../img/main_bg.jpg") repeat scroll left top #FBFBFB;
+    float: left;
+    width: 260px;
+    height: auto;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 20px;
+    display: block;
+    border: 1px solid #DDDDDD;
+    margin: 5px 0px 5px -6px;
+    z-index: 1;
+}
+
+#entry ul li, #sub-sidebar ul li ul li {
+    display: block;
+    background: none repeat scroll 0px 0px #D2B896;
+}
+
+#sub-sidebar ul li ul {
+    padding: 3px 0px;
+}
+
+.widget-divider {
+    height: 30px;
+}
+
+.left_col {
+    float: left;
+    width: 44%;
+}
+
+.right_col {
+    float: right;
+    width: 44%;
+}
+
+.clear {
+    margin: 10px 0px ! important;
+    clear: both;
+}
+
+.superquote {
+    clear: both;
+    margin: 40px 0px;
+    font-size: 26px;
+    font-style: italic;
+    font-family: Georgia;
+    line-height: 34px;
+    padding-left: 20px;
+}
+
+/* for IE7 */
+#sub-sidebar ul.no-bullets li {
+    list-style-type: none;
+    background: none repeat scroll 0% 0% transparent;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 5px;
+    float: left;
+}
+
+#sub-sidebar ul.no-bullets li:nth-child(2n) {
+    padding-right: 0px;
+}
+
+* html #sub-sidebar ul.no-bullets li {
+    padding-right: 3px;
+}
+
+* html #sub-sidebar ul.no-bullets li {
+    padding-right: 3px;
+}
+
+/* for IE7 */
+#sub-sidebar ul.no-bullets li {
+}
+
+/* for IE8, going last */
+
+
+
+/* !!! Pagination and Page Taxonomy Styling (for Archives - ie: Search Results for XXX) !!!! */
+#identification {
+    background: none repeat scroll 0% 0% #FFFFFF;
+    width: auto;
+    height: auto;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+    display: block;
+    border: 1px solid #EAEAE8;
+    margin: 5px;
+}
+
+#identification h1 {
+    font-size: 17px;
+    color: #222222;
+    margin: 5px 0px;
+}
+
+.taxonomy a {
+    background: none repeat scroll 0% 0% #FFFFFF;
+    width: auto;
+    height: auto;
+    border-radius: 5px 5px 5px 5px;
+    padding: 3px 5px 4px;
+    border: 1px solid #EAEAE8;
+    margin: 1px;
+    text-transform: uppercase;
+    line-height: 28px;
+}
+
+.taxonomy br {
+    display: none;
+}
+
+#identification a {
+    font-size: 11px ! important;
+}
+
+#identification p {
+    margin: 6px 0px 4px;
+}
+
+#pagination {
+    margin: 0px 5px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.p a, .m a {
+    padding: 10px 10px 5px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.p, .m {
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+/* !!! Vertical Blog Mods !!!!!!!!!!!!!!!!!!!!! */
+.vert-blog .post-img {
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+
+.vert-blog h2 {
+    margin-top: 0px ! important;
+}
+
+#page-title h1 {
+    background: none repeat scroll 0% 0% #EEEEEE;
+    font-size: 14px;
+    padding: 15px;
+    margin: -30px -30px 20px;
+    border-radius: 5px 0px 0px 0px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+/* !!! Gallery Mods !!!!!!!!!!!!!!!!!!!!! */
+.gallery p {
+    margin: 0px 0px 5px ! important;
+}
+
+.gallery {
+    margin-bottom: -20px;
+}
+
+/* !!! CSS CUSTOMIZATIONS !!!!!!!!!!!!!!!!!!!!! */
+/* !!! CSS CUSTOMIZATIONS !!!!!!!!!!!!!!!!!!!!! */
+/* !!! CSS CUSTOMIZATIONS !!!!!!!!!!!!!!!!!!!!! */
+/* !!! These are mostly for advanced users... play around with these at your own peril, but have fun! !!!!!!!!!!!!!!!!!!!!! */
+
+/* CSS Width / Height LOCKDOWN - Uncomment this when you want all grid images to be cropped uniformly. 
+#grid-content li img{
+	width: 200px !important; 
+	height: 130px !important; 
+	overflow: hidden;
+	}
+*/
+
+
+/* CSS Width / Height LOCKDOWN - Uncomment this when you want all grid titles/descriptions to be cropped uniformly */
+#grid-content .module {
+    width: 200px;
+    overflow: hidden;
+    height: 50px ! important;
+}
+
+/* NO-TEXT Version - Apply this ".no-text" class to your "grid-content LI's" to use the "No-Text" version of the grids. */
+#grid-content li.no-text .module {
+    visibility: hidden ! important;
+    height: 0px ! important;
+    width: 0px ! important;
+    padding: 0px ! important;
+    margin: 0px ! important;
+    overflow: hidden ! important;
+}
+
+/* This is for the AJAX loader */
+#loading {
+    position: absolute;
+    z-index: 999;
+    width: 100px;
+    text-align: center;
+    left: 55%;
+    padding: 5px;
+    background: none repeat scroll 0% 0% #FFFFFF;
+    top: 40%;
+    display: none;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #EAEAE8;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.ppt {
+    display: none ! important;
+}
+
+/* !!! Version 1.0.2b CSS Tweaks !!!!!!!!!!!!!!!!!!!!! */
+#entry h2 a, #entry h2 a:visited {
+    color: #444444;
+}
+
+.module_dates {
+    border-radius: 2px 2px 2px 2px;
+    background: none repeat scroll 0px 0px white;
+    font-size: 8.5px;
+    height: 12px;
+    padding: 1px 1px 1px 2px;
+    position: absolute;
+    right: 12px;
+    top: 133px;
+}

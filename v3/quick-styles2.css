@@ -1,0 +1,378 @@
+@font-face {
+    font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.svg#icomoon") format("svg"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype");
+}
+
+body {
+    background: url("images/main_bg3.jpg") repeat scroll left top transparent;
+    font-family: 'Ubuntu','Gotham',sans-serif;
+}
+
+* {
+    outline: medium none;
+}
+
+
+#grid-content li a {
+    border-radius: 6px 6px 0px 0px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    background-color: #37362E;
+    width: 200px;
+    height: 130px;
+}
+
+#content .sorting a {
+    text-shadow: 1px -1px 1px #000000;
+    color: #A4A197;
+    margin: 0px;
+    display: block;
+    padding: 10px 8px;
+}
+
+#content a {
+    color: #0998DB;
+}
+
+#content a:visited {
+}
+
+.sorting > :last-child {
+    border-right: medium none;
+}
+
+.sorting > :first-child {
+    border-left: medium none;
+}
+
+.sorting li {
+    display: table-cell;
+    text-align: center;
+    font-family: bebasneueregular;
+    line-height: 1.1;
+    border-left: 1px solid #443F31;
+    border-right: 1px solid #110D0D;
+    font-size: 17px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    width: 20%;
+}
+
+#inner {
+}
+
+#sidebar, #content {
+    line-height: 1.4;
+    font-size: 1.3em;
+}
+
+#content {
+    padding-left: 245px;
+    padding-right: 12px;
+}
+
+div#sidebar {
+    width: 230px;
+    box-shadow: -1px -6px 6px 2px black inset;
+    border-right: 2px solid #4D4643;
+    background: none repeat scroll 0px 0px rgba(3, 3, 3, 0.08);
+}
+
+#sidebar .widget-area {
+    box-shadow: none;
+    background: none repeat scroll 0px 0px #F7F3E2;
+}
+
+#sidebar p {
+    color: #100A07;
+    margin-bottom: 0.75em;
+    letter-spacing: 0.7px;
+    line-height: 1.25;
+    font-size: 15px;
+}
+
+#sidebar .textwidget p:last-child {
+    margin-bottom: 0px;
+    color: #CFF3F4;
+}
+
+#sidebar ul.widget-area > li.widget_recent_entries {
+    margin-left: 20px;
+    padding-right: 0px ! important;
+    background: none repeat scroll 0% 0% transparent;
+    box-shadow: none;
+    border: medium none;
+    padding-left: 0px ! important;
+}
+
+#sub-sidebar {
+    background: none repeat scroll 0% 0% #EDEDED;
+}
+
+#sub-sidebar h2 a, #sub-sidebar h2 a:visited {
+    color: #100A07;
+}
+
+#sub-sidebar a, #sub-sidebar a:visited {
+    color: #0998DB;
+}
+
+.widget_recent_entries a {
+    display: block;
+    padding: 3px 2px 3px 10px;
+    font-size: 11px;
+}
+
+#sidebar ul.widget-area ul li {
+    background: none repeat scroll 0px 0px #1986A4;
+    border: medium none;
+    letter-spacing: 1px;
+    margin: 0px 0px 20px;
+    box-shadow: -5px 0px 4px -1px black inset, 0px 0px 1px 2px #73D3E4 inset, -2px 4px 1px 0px black;
+}
+
+#sidebar ul.widget-area {
+    background: none repeat scroll 0px 0px transparent;
+    border: medium none;
+}
+
+#sidebar ul ul, #sidebar ul ul li {
+    background: none repeat scroll 0% 0% transparent;
+    margin: 0px ! important;
+    box-shadow: none;
+    border-bottom: medium none;
+}
+
+#pagination {
+    margin-top: 2em;
+    position: relative;
+}
+
+#grid-content li h2, #grid-content li h2 a, .vcard a {
+    display: block;
+    font-family: 'BebasNeueRegular','BebasNeue','League Gothic',sans-serif;
+    letter-spacing: 0.8px;
+    line-height: 30px;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+}
+
+#grid-content li {
+}
+
+#grid-content li:hover {
+    border-color: rgba(0, 0, 0, 0.47);
+    background: none repeat scroll 0px 0px rgba(0, 0, 0, 0.32);
+    opacity: 0.9;
+}
+
+.featured {
+    padding: 0px ! important;
+    background: none repeat scroll 0% 0% transparent ! important;
+    border: medium none ! important;
+}
+
+#grid-content li, .featured {
+    transition: all 0.2s ease 0s;
+    border-radius: 12px 12px 12px 12px;
+    display: block;
+    height: auto;
+    position: relative;
+    padding: 12px;
+    max-width: 948px;
+    width: auto;
+    margin: 9px;
+    background: none repeat scroll 0px 0px rgba(7, 5, 4, 0.43);
+    border: 1px solid #3D3835;
+}
+
+#grid-content li {
+    height: 170px;
+    overflow: hidden;
+    opacity: 0.25;
+    transition: all 0.4s ease 0.2s;
+}
+
+#grid-content li img, .featured img {
+    display: block;
+    border: medium none;
+    padding: 0px;
+}
+
+#grid-content li > .module {
+    height: auto;
+    line-height: 1;
+    margin: 0px auto 4px;
+    border-radius: 0px 0px 0px 0px;
+    transition: all 0.4s ease 0.2s;
+    position: relative;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.5) ! important;
+}
+
+#grid-content li h2 a {
+    transition: all 0.4s ease 0.2s;
+    border-radius: 0px 3px 3px 0px;
+    display: block;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 32px;
+    margin: 9px 0px;
+    letter-spacing: 1px;
+    color: #3D3333 ! important;
+}
+
+#grid-content li:hover h2 a {
+    color: #FFFFFF ! important;
+}
+
+#grid-content li:hover > .module {
+    top: -40px;
+}
+
+#sidebar p.my_term-archive {
+    margin-bottom: 0px;
+    box-shadow: -1px 0px 1px 0px black inset;
+}
+
+a.proj-icon, #sidebar a.proj-icon, #grid-content a.proj-icon {
+    font-family: 'icomoon';
+    font-style: normal;
+    font-weight: normal;
+    border-radius: 4px 4px 4px 4px;
+    border: 0px none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    margin: 6px 0px 6px 4px;
+    width: 20px;
+    opacity: 0.9;
+    transition: all 0.2s ease 0s;
+    position: static;
+    font-size: 18px;
+    color: #F4EEEC;
+    background:none transparent;
+}
+
+a.proj-icon:hover {
+    color: #FFFFFF ! important;
+    opacity: 1;
+}
+
+#intro {
+    z-index: 0;
+    min-width: 400px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ul.sorting {
+    display: table;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#intro i {
+    font-style: normal;
+    font-family: Times,serif;
+    line-height: 1;
+    font-size: 36px;
+    vertical-align: baseline;
+}
+
+#intro span {
+    text-transform: uppercase;
+    font-family: bebasneueregular;
+    border-bottom: 2px solid rgba(1, 1, 1, 0.23);
+    text-align: end;
+    color: #16ACBF;
+    padding: 13px 12px 0px 0px;
+    box-shadow: 0px 4px 2px -3px rgba(160, 149, 149, 0.26);
+    display: block;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.featured h2 {
+    color: #17ACBF;
+    clear: none;
+    margin: 0px;
+    font-weight: normal;
+    font-family: 'BebasNeueRegular','BebasNeue','League Gothic',sans-serif;
+    text-transform: uppercase;
+    padding: 0px;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.featured .item {
+    text-decoration: none;
+    min-height: 220px;
+    border: 1px solid #FFEECC;
+    background: none repeat scroll 0px 0px #F9EEDE;
+    display: inline-block;
+    z-index: 200;
+    margin: 12px;
+    position: relative;
+    border-radius: 6px 6px 6px 6px;
+    padding: 10px 20px 10px 10px;
+    width: 49%;
+}
+
+.featured .item img {
+    float: left;
+    border-radius: 9px 9px 9px 9px;
+    vertical-align: top;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+#content .featured .item p {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 21px;
+    margin: 10px 0px;
+}
+
+.featured p.label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0px ! important;
+    display: none;
+}
+
+.featured a.proj-icon, .featured a.proj-icon:visited {
+    font-size: 24px;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    color: #F7F3E2 ! important;
+}
+
+.featured .more-info {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.featured .more-info span {
+    display: inline-block;
+    font-family: Times,serif;
+    line-height: 0;
+    margin-left: 5px;
+    font-size: 1.5em;
+    vertical-align: baseline;
+}
+
+#content .featured a.proj-icon:hover {
+    color: #FFFFFF ! important;
+}

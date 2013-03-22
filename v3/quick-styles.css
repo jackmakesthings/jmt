@@ -1,0 +1,254 @@
+
+
+@font-face {
+    font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.svg#icomoon") format("svg"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype");
+}
+
+body {
+    background: url("skinImages/main_bg.jpg") repeat scroll left top transparent;
+    font-family: 'Ubuntu','Gotham',sans-serif;
+}
+
+#sidebar {
+    background: url("skinImages/sidebar_bg.png") repeat-y fixed -25px 0px transparent;
+    height: 100%;
+    z-index: 30;
+}
+
+#sidebar .navigation li a:hover {
+    color: #0998DB;
+}
+
+#sidebar .navigation li.current, #sidebar .navigation li.current a {
+    color: #0998DB;
+}
+
+#grid-content li a {
+    border-radius: 6px 6px 0px 0px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    height: 130px;
+    width: 200px;
+    background-color: #000000;
+}
+
+#content a {
+    color: #0998DB;
+}
+
+#content a:visited {
+    color: #0998DB;
+}
+
+#sidebar, #content {
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+div#sidebar {
+    border-right: 3px solid #FEECC4;
+    background: none repeat scroll 0% 0% #17ACBF;
+}
+
+#sidebar .widget-area {
+    background: none repeat scroll 0% 0% #F7F3E2;
+}
+
+#sidebar p {
+    color: #100A07;
+    letter-spacing: 0.3px;
+    margin-bottom: 0.75em;
+}
+
+#sidebar .textwidget p:last-child {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#sidebar .widget_recent_entries {
+    background: none repeat scroll 0% 0% #DBCDAD ! important;
+}
+
+#sub-sidebar {
+    background: none repeat scroll 0% 0% #EDEDED;
+}
+
+#sub-sidebar h2 a, #sub-sidebar h2 a:visited {
+    color: #100A07;
+}
+
+#sub-sidebar a, #sub-sidebar a:visited {
+    color: #0998DB;
+}
+
+#pagination {
+    margin-top: 2em;
+    position: relative;
+}
+
+#grid-content li h2, #grid-content li h2 a, .vcard a {
+    display: block;
+    font-family: 'BebasNeueRegular','BebasNeue','League Gothic',sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    line-height: 30px;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+}
+
+#grid-content li:hover {
+    border-color: rgba(0, 0, 0, 0.47);
+    opacity: 1;
+    background: none repeat scroll 0px 0px rgba(0, 0, 0, 0.32);
+}
+
+#grid-content li, .featured {
+    -moz-transition: all 0.2s ease 0s;
+    border-radius: 12px 12px 12px 12px;
+    border: 1px solid #3D3835;
+    display: block;
+    height: auto;
+    margin: 9px;
+    padding: 12px;
+    width: auto;
+    background: none repeat scroll 0px 0px rgba(15, 18, 18, 0.46);
+}
+
+#grid-content li img, .featured img {
+    border-radius: 3px 3px 3px 3px;
+    border: medium none;
+    display: block;
+    padding: 0px;
+}
+
+#grid-content .module {
+    border-radius: 0px 0px 6px 6px;
+    height: auto ! important;
+    line-height: 1;
+    margin: 0px auto;
+}
+
+#grid-content li h2 a {
+    -moz-transition: all 0.2s linear 0s;
+    background: none repeat scroll 0% 0% #17ACBF;
+    border-radius: 0px 0px 0px 0px;
+    line-height: 1.1;
+    padding: 3px 8px;
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+#grid-content li:hover h2 a {
+    background: none repeat scroll 0% 0% #2ED1E7;
+    color: #FFFFFF ! important;
+}
+
+#sidebar p.my_term-archive {
+    margin-bottom: 0px;
+}
+
+a.proj-icon, #sidebar a.proj-icon, #grid-content a.proj-icon {
+    font-family: 'icomoon';
+    font-style: normal;
+    font-weight: normal;
+    background: none repeat scroll 0% 0% #17ACBF;
+    border-radius: 4px 4px 4px 4px;
+    border: 0px none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    color: #100A07;
+    font-size: 14px;
+    line-height: 20px;
+    height: 20px;
+    margin: 6px 0px 6px 4px;
+    width: 20px;
+    opacity: 0.9;
+    -moz-transition: all 0.2s ease 0s;
+    position: static;
+}
+
+a.proj-icon:hover {
+    color: #FFFFFF ! important;
+    opacity: 1;
+}
+
+/*†featured†item†block†==================================†*/
+.featured {
+    background: none repeat scroll 0px 0px rgba(0, 0, 0, 0.19);
+    width: 440px;
+    opacity: 0.8;
+}
+
+.featured h2 {
+    color: #17ACBF;
+    clear: none;
+    margin: 0px;
+    font-weight: normal;
+    font-family: 'BebasNeueRegular','BebasNeue','League Gothic',sans-serif;
+    text-transform: uppercase;
+    padding: 0px;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.featured .item {
+    display: block;
+    text-decoration: none;
+    border-radius: 12px 12px 12px 12px;
+    min-height: 220px;
+    padding: 15px;
+    border: 1px solid #FFEECC;
+    background: none repeat scroll 0px 0px #F9EEDE;
+}
+
+.featured .item img {
+    float: left;
+    border-radius: 9px 9px 9px 9px;
+    vertical-align: top;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+#content .featured .item p {
+    margin: 0px 0px 10px;
+    font-size: 14px;
+}
+
+.featured p.label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0px ! important;
+    display: none;
+}
+
+.featured a.proj-icon, .featured a.proj-icon:visited {
+    font-size: 24px;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    color: #F7F3E2 ! important;
+}
+
+.featured .more-info {
+    font-size: 14px;
+}
+
+.featured .more-info:after {
+    content: "‣";
+    font-size: 2em;
+    line-height: 1em;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#content .featured a.proj-icon:hover {
+    color: #FFFFFF ! important;
+}

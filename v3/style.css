@@ -1,0 +1,464 @@
+/* theme name: fromscratchtwo */
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), 
+  url("fonts/icomoon.svg#icomoon") format("svg"), 
+  url("fonts/icomoon.ttf") format("truetype");
+}
+
+body {
+    height: auto;
+    min-height: 100%;
+    color: #665E53;
+    width: 100%;
+    position: absolute;
+     background: url("images/main_bg3.jpg") repeat scroll left top #594f4f;
+    font-family: "Ubuntu","Gotham",sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 0px 0px 30px;
+    text-align: right;    text-shadow: 0px 0px 3px rgba(217, 213, 207, 0.38);
+     position: relative; top:10px;
+     margin-bottom: 60px; margin-left: -30px;
+     padding: 0 10px;
+     color: #2B2724;
+     border-bottom: 3px solid #362A2A;
+     font-size: 22px;
+     text-align: left; text-transform: uppercase;
+     letter-spacing: 3px;
+		 -moz-box-shadow: 2px 2px 3px 0 black;
+		 -webkit-box-shadow: 2px 2px 3px 0 black;
+	 box-shadow: 2px 2px 3px 0 black;
+	 background: none repeat scroll 0% 0% #17ACBF;
+     clear: none;
+     line-height: 36px;
+     z-index: 10;
+     display:inline-block;
+     }
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 { font-size: 17px; line-height:25px; }
+h4 { font-size: 14px; }
+h5, h6 {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+	}
+
+h6 { font-size: 12px; }
+
+.right { float: right; }
+.left { float: left; }
+.center {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    float: none;
+}
+
+li, ul li, ol li { list-style:none; }
+
+/*unused*/
+.entry-container {
+    margin: 0px auto;
+    padding-left: 288px;
+    display: table;
+    width: 100%;
+}
+
+* {
+    outline: medium none; }
+
+a, a:link, a:active { color:#0bd; }
+a:visited { color:#3b7776; color: #0bd }
+a:hover  { color:#2df; }	
+p a:hover { border-bottom:1px dashed #3B7776; }
+.rarr, .larr {
+	font-family: Times, serif;
+	font-size:130%; line-height:0; display:inline-block; 
+	vertical-align:middle;
+	padding:0 3px;
+	}
+
+.larr {
+   -webkit-transform: rotate(-180deg);
+   -moz-transform: rotate(-180deg);
+   -ms-transform: rotate(-180deg);
+   -o-transform: rotate(-180deg);
+   transform: rotate(-180deg);
+   filter: progid:DXImageTransform.Microsoft.Matrix( 
+    M11=-1, M12=1.2246063538223773e-16, 
+    M21=-1.2246063538223773e-16, 
+    M22=-1, sizingMethod='auto expand');
+   zoom: 1;
+	 }
+
+#sidebar, #content {
+    line-height: 1.4;
+    font-size: 1.3em;
+	}
+
+#content {
+    min-height: 100%;
+    margin-bottom: 0px;
+    padding-left: 240px;
+    padding-right: 40px;
+	}
+
+#sidebar {
+    width: 240px;
+    float: left;
+    margin: 0px 15px 0px 0px;
+    height: 100%;
+    position: fixed;
+    box-shadow: -2px 2px 6px 2px black inset;
+    border-right: 2px solid #4D4643;
+    background: none repeat scroll 0px 0px rgba(3, 3, 3, 0.08);
+	}
+
+#sidebar .logo {
+    text-align: center;
+    padding: 30px 0px 30px 3px;
+	}
+
+#sidebar #logoLink {
+	display:block;
+	width:200px; height:195px;
+	text-indent:-9999px; outline:none; text-decoration:none;
+	line-height:0; padding:0; margin:auto;
+	background:url(images/logosprite.png) no-repeat left center transparent;
+	}
+
+#sidebar #logoLink:hover { background-position:right center; }	
+
+#sidebar h2, #sidebar .smcf-link, #sidebar .bioLink, #sidebar .resumeLink {
+    letter-spacing: 2px;
+    text-align: right;
+    margin-bottom: 2px;
+    clear: both;
+    display: block;
+    float: none;
+    font-size: 14px;
+    color: #716B5E;
+    padding-top: 20px;
+    padding-right: 8px;
+	}
+
+#sidebar .smcf-link,
+#sidebar .bioLink, 
+#sidebar .resumeLink {
+	text-transform:uppercase;
+	padding-top:1px;
+	font-weight:bold;
+	transition:0.3s color linear;
+	}
+	
+#sidebar .smcf-link, 
+#sidebar .bioLink:hover, 
+#sidebar .resumeLink:hover { color:#eec; }	
+
+#sidebar ul {
+    list-style: none outside none;
+    display: block;
+	}
+
+#sidebar li {
+    margin-left: 10px;
+    padding-right: 0px ! important;
+    background: none repeat scroll 0% 0% transparent;
+    box-shadow: none;
+    border: medium none;
+    padding-left: 0px ! important;
+    list-style: none outside none;
+    display: block;
+    clear: both;
+    max-width: 230px;
+    }
+
+#sidebar a {
+    color: #EEEECC;
+    padding: 5px 10px;
+	}
+
+#sidebar li a {
+    display: block;
+    padding-right: 10px;
+    transition: all 0.3s linear 0s;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 8px;
+    font-size: 11.5px;
+    color: #2B2424;
+    white-space: nowrap;
+    max-width: 230px;
+	}
+
+ #sidebar li a:hover {
+    padding-right: 20px;
+	} 
+
+#sidebar ul ul {
+    background: none repeat scroll 0% 0% transparent;
+    margin: 0px ! important;
+    box-shadow: none;
+    border: none;
+    text-align: right;
+	}
+
+#sidebar ul ul li {
+    background: none repeat scroll 0px 0px #1986A4;
+    border: medium none;
+    margin-left: auto; margin-bottom: 8px;
+    display: inline-block;
+    text-align: left;
+    transition: all 0.3s linear 0s;
+    font-weight: 400;
+    float: right;    clear: right;
+    width: auto;
+    letter-spacing: 0.7px;
+    opacity: 0.85;
+    box-shadow: -5px 0px 4px -2px black inset, -2px 4px 1px 0px black;
+	}
+
+#sidebar ul ul li:hover {
+    opacity: 1;
+    margin-left: 0px;
+	}
+
+#sidebar ul.widget-area {
+    background: none transparent;
+    border: none;
+	}
+
+
+/*=================================*/
+#grid-content {
+    overflow: visible;
+    margin: 0px auto;
+    clear: both;
+	}
+
+#grid-content li {
+	border-radius:4px;
+    display: block;
+    position: relative;
+    transition: all 0.4s linear 0.2s;
+    padding: 10px;
+    opacity: 0.6;
+    margin: 12px 8px 0px 9px;
+    width: 190px;    height: 170px;
+	background: rgba(148, 148, 146, 0.12);
+	border-width: 1px 2px; border-color: #1B1B15; border-style: dashed dotted;
+	box-shadow: 0px 1px 4px 1px #222, inset 0 0 3px #666;
+	}
+
+#grid-content li:hover {
+    opacity: 1 ! important;
+}
+
+#grid-content li > a {
+    display: block;
+    position: relative;
+    width: 100%;    height: 170px;
+}
+
+#grid-content h2 {
+    display: block;
+    margin: 0px; padding: 0px;
+    line-height: 36px; letter-spacing: 0.5px;
+}
+
+#grid-content li img {
+    display: block; overflow:hidden;
+    border: medium none;
+    padding: 0px;
+    opacity: 0.9;
+	width:100%;
+	height:100%;
+}
+
+#grid-content li > .module {
+    line-height: 1;
+    transition: all 0.4s linear 0.2s;
+    position: relative;
+    margin: 0px auto;
+	background-color: rgb(51,48,45);
+    background-color: rgba(51, 48, 45, 0.92);
+	height:80px;
+	text-align:center;
+	height:50%;
+	padding:30% 0 15%;
+	top:-100%;
+	opacity:0;
+	}
+	
+#grid-content li:hover > .module { top:	-100%; opacity:1;}
+
+.module span {
+    font-family:'Ubuntu';
+    font-size:45px;
+    font-weight:normal;
+    left:-15px;
+    line-height:35px;
+    position:absolute;
+    right:100%;
+    top:35%;
+    z-index:30;
+    opacity:0.3;
+}
+
+.module .two { left:100%; right:-15px; }
+
+#grid-content li h2 a {
+    text-transform: uppercase;
+    transition: all 0.4s ease 0.2s;
+    display: block;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+    margin: 8px 0px;
+    letter-spacing: 0.5px;
+    font-size: 12px; 	white-space:nowrap;
+    color: #FFFFFF;
+
+}
+
+#grid-content li:hover h2 a {
+    color: #FFFFFF;
+	border-radius:0;
+}
+
+a.proj-icon {
+    font-family: "icomoon";
+    font-style: normal;
+    font-weight: normal;
+    border-radius: 4px 4px 4px 4px;
+    border: 0px none;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 18px;
+    height: 20px;
+    margin: 4px 0px 8px 4px;
+    width: 20px;
+    opacity: 0.9;
+    transition: all 0.2s ease 0s;
+    position: static;
+    font-size: 18px;
+    color: #F4EEEC;
+    background: none repeat scroll 0% 0% transparent;
+}
+
+a.proj-icon:hover {
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.introBlock {
+    display: block;
+    width: 95%;
+    margin: auto;
+}
+
+.introBlock ul {
+    display: table;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+.introBlock li {
+    list-style: none outside none;
+    width: auto;
+    display: table-cell;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.introBlock a {
+    display: block;
+    padding: 5px 8px;
+    color: #20B1C4;
+}
+
+/* sorting links === */
+
+#sortCats a, #sortCats a:visited {
+    text-transform: uppercase;
+    border-radius: 4px 4px 4px 4px;
+    height: auto;    width: auto;
+    border: medium none;
+    padding: 6px;
+    font-size: 13px; font-weight:bold;
+    line-height: 1;
+    margin: 6px 8px 0px 4px;
+}
+#sortCats a:hover { color:#eec; }
+#sortTools {
+    clear: right;
+    font-family: "icomoon",icon,sans-serif ! important;
+    text-transform: none;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    bottom: 0px;
+    width: 40px;
+    margin: 0px;
+    padding: 10% 0px;
+}
+
+#sortTools li {
+    display: block;
+    border:none;
+    padding: 0px;
+}
+
+#sortTools a, #sortTools a:visited {
+    background-color: #2E2B26;
+    color: #45413B;
+    height: auto;
+    width: auto;
+    border: medium none;
+    padding: 6px;
+    font-size: 20px;
+    line-height: 18px;
+    margin: 6px 8px 6px 4px;
+    text-shadow: -2px -2px black;
+    opacity: 1 ! important;
+    font-family: "icomoon",icon,sans-serif ! important;
+	}
+
+#sortTools a.current, #sortCats a.current {
+    color: #2E2B26;
+    background-color: #20B1C4;
+    text-shadow: 0px 0px transparent;
+	}
+
+#sortTools a:hover { color: #20B1C4; }
+#sortTools a.current:hover {  color: #2E2B26; }
+
+#sortTools a > .legend { 
+	position: absolute; right: 45px; z-index:50;
+	text-align: right; color:#45413B !important;
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'ubuntu', verdana, sans-serif;
+	text-transform: uppercase; letter-spacing: 1px;
+	font-size: 12px; line-height: 18px;
+	visibility: hidden;
+	background:rgba(9,8,7,0.7);
+	padding:4px 6px;
+	}
+
+#sortTools a:hover > .legend {	visibility: visible; }
