@@ -58,16 +58,17 @@
 
 <script type="text/javascript">	
 	jQuery(document).ready(function() {	
-	jQuery('#grid-content').filterable().masonry({
-      itemSelector: '.project',
-      isFitWidth: true
-    });
+	jQuery('#grid-content').filterable();
+	//.masonry({
+     // itemSelector: '.project',
+     // isFitWidth: true
+   // });
       
 });
 </script>
 <style type="text/css">
 #grid-content li:hover {
-    opacity: 0.9 !important;
+    opacity: 1 !important;
 }
 </style>
 <?php get_footer();?>

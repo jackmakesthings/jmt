@@ -216,10 +216,7 @@ $homeurl = home_url();
 function footer_additions() { ?>	
 <script type="text/javascript">	
 	jQuery(document).ready(function() {	
-	jQuery('#grid-content').filterable().masonry({
-      itemSelector: '.project',
-      isFitWidth: true
-    });
+	jQuery('#grid-content').filterable();
       
 });
 </script>
